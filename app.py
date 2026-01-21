@@ -48,21 +48,14 @@ if not st.session_state["app_loaded"]:
 
     loader.empty()
 
-    # ✅ SET FLAG HERE (IMPORTANT)
+   
     st.session_state["app_loaded"] = True
 
 
-
-
-# =====================================================
-# SESSION STATE INITIALIZATION (MUST BE AT TOP)
-# =====================================================
 if "improved_resume" not in st.session_state:
     st.session_state["improved_resume"] = None
 
-# =====================================================
 # PAGE CONFIG
-# =====================================================
 st.set_page_config(
     page_title="TalentFit AI – Resume–Job Fit Analyzer",
     layout="wide"
@@ -81,16 +74,12 @@ st.markdown(
 )
 
 
-# =====================================================
 # FILE UPLOAD
-# =====================================================
 col1, col2 = st.columns(2)
 resume_file = col1.file_uploader("Upload Resume", ["pdf", "docx", "txt"])
 jd_file = col2.file_uploader("Upload Job Description", ["pdf", "docx", "txt"])
 
-# =====================================================
 # ANALYZE BUTTON
-# =====================================================
 if st.button("Analyze Resume"):
 
     if not resume_file or not jd_file:
@@ -108,9 +97,7 @@ if st.button("Analyze Resume"):
         keyword_gap = extract_keyword_gap(resume_text, jd_text)
         skill_priority = calculate_skill_priority(matched + missing, jd_text)
 
-    # =================================================
     # TABS
-    # =================================================
     tab1, tab2, tab3, tab4, tab5 = st.tabs(
         [
             "📊 Match",
@@ -121,9 +108,7 @@ if st.button("Analyze Resume"):
         ]
     )
 
-    # =================================================
     # TAB 1: MATCH
-    # =================================================
     with tab1:
         st.metric("TF-IDF Score", f"{round(tfidf_score, 2)}%")
         st.metric("Semantic Score (Hugging Face)", f"{round(semantic_score, 2)}%")
@@ -158,9 +143,8 @@ if st.button("Analyze Resume"):
             "to perform well in traditional ATS systems."
         )
 
-    # =================================================
     # TAB 2: SKILL PRIORITY
-    # =================================================
+    
     with tab2:
         st.subheader("🧠 Skill Analysis with Priority")
 
@@ -175,9 +159,7 @@ if st.button("Analyze Resume"):
                 else:
                     st.info(f"{skill} – Low Priority")
 
-    # =================================================
     # TAB 3: KEYWORD GAP
-    # =================================================
     with tab3:
         st.subheader("🔍 Keyword Gap Analysis")
 
@@ -189,9 +171,7 @@ if st.button("Analyze Resume"):
         else:
             plot_keyword_gap(keyword_gap)
 
-    # =================================================
     # TAB 4: EXPLAINABILITY
-    # =================================================
     with tab4:
         st.subheader("🧠 ATS Explainability")
 
@@ -213,9 +193,7 @@ if st.button("Analyze Resume"):
         else:
             st.write("Improve wording and quantify achievements.")
 
-    # =================================================
     # TAB 5: AI RESUME IMPROVEMENT (HUGGING FACE)
-    # =================================================
     with tab5:
         st.subheader("✍ AI-Guided Resume Improvement Suggestions")
 
@@ -246,4 +224,5 @@ if st.button("Analyze Resume"):
 
         for s in suggestions:
             st.info("• " + s)
+
 
