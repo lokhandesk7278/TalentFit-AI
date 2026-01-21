@@ -1,0 +1,36 @@
+Shravani Lokhande
+Aspiring Data Scientist | Machine Learning Enthusiast
+
+Summary:
+Motivated data science student with hands-on experience in data analysis
+and machine learning. Passionate about solving real-world problems using AI.
+
+Technical Skills:
+- Python
+- Data Analysis
+- Pandas
+- NumPy
+- Machine Learning
+- SQL
+- Scikit-learn
+
+Projects:
+1. Customer Churn Prediction
+   - Built a machine learning model to predict customer churn using Python
+   - Performed data cleaning and exploratory data analysis
+   - Used logistic regression and decision tree models
+
+2. Sales Data Analysis
+   - Analyzed large sales datasets using Pandas and NumPy
+   - Created visualizations to identify trends and patterns
+   - Presented insights to improve business decisions
+
+Education:
+Bachelor of Engineering in Computer Science
+2024 – 2027
+
+Experience:
+Data Science Intern
+- Assisted in data preprocessing and analysis tasks
+- Worked with structured datasets using Python
+- Supported model evaluation and reporting

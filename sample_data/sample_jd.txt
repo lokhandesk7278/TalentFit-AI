@@ -1,0 +1,25 @@
+We are looking for a Data Scientist Intern with strong foundations in machine learning
+and data analysis. The candidate will work closely with the data engineering and
+analytics teams to build predictive models and data-driven solutions.
+
+Responsibilities:
+- Build and evaluate machine learning models for business problems
+- Perform data cleaning, preprocessing, and feature engineering
+- Work with large datasets using Python, Pandas, and NumPy
+- Apply statistical techniques for data analysis and experimentation
+- Collaborate with engineers to deploy models into production
+- Communicate insights using data visualization tools
+
+Required Skills:
+- Strong knowledge of Python programming
+- Experience with machine learning algorithms
+- Hands-on experience with Pandas, NumPy, and Scikit-learn
+- Understanding of statistics and probability
+- Basic knowledge of SQL for data extraction
+- Familiarity with deep learning concepts is a plus
+- Exposure to NLP or text processing techniques is preferred
+
+Good to Have:
+- Experience with TensorFlow or PyTorch
+- Knowledge of cloud platforms (AWS, GCP)
+- Understanding of model deployment pipelines
