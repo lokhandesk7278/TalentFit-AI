@@ -1,4 +1,3 @@
-[🚀 Live Demo: https://huggingface.co/spaces/<your-username>/Talentfit-AI](https://huggingface.co/spaces/Shravani-Lokhande/Talentfit-AI)
 
 # TalentFit AI – Resume–Job Fit Analyzer
 
